@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Notice Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📌 Online Notice Board</h1>
+  </header>
+
+  <main>
+    <!-- Login Section -->
+    <section id="loginSection" class="login-form">
+      <h2>🔑 Admin Login</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginError" class="error"></p>
+    </section>
+
+    <!-- Notice Form (hidden until login) -->
+    <section id="noticeSection" class="notice-form hidden">
+      <h2>Add New Notice</h2>
+      <form id="noticeForm">
+        <input type="text" id="title" placeholder="Enter Title" required>
+        <textarea id="message" placeholder="Enter Notice Message" required></textarea>
+        <button type="submit">Post Notice</button>
+      </form>
+    </section>
+
+    <!-- Notice Board -->
+    <section class="notice-board">
+      <h2>All Notices</h2>
+      <div id="noticeList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Online Notice Board | Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
